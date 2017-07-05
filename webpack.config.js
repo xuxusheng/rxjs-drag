@@ -67,7 +67,7 @@ module.exports = function () {
         disable: false
       }),
       new HtmlWebpackPlugin({
-        filename: 'index.[hash].html',
+        filename: 'index.html',
         template: path.resolve(__dirname, './src', 'index.html'),
         inject: 'body'
       }),
@@ -81,6 +81,12 @@ module.exports = function () {
         }
       })
   )
+  
+  config.devServer = {
+    contentBase: '/',
+    historyApiFallback: true,
+    inline: true
+  }
   
   return config
 }()

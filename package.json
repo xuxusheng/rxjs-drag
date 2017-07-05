@@ -6,7 +6,7 @@
   "author": "许盛 <xusheng@antiy.cn>",
   "license": "MIT",
   "scripts": {
-    "start": "webpack-dev-server",
+    "start": "webpack-dev-server --progress --color",
     "build": "webpack"
   },
   "dependencies": {
